@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <h1>Now, another random fuckin test text</h1>
-    <router-link to="/about">Back bitch</router-link>
+    <h1>Now, another random test text</h1>
   </div>
 </template>
 
@@ -15,5 +14,7 @@ export default {
 </script>
 
 <style scoped>
-
+.home{
+  min-height: 1000px
+}
 </style>
