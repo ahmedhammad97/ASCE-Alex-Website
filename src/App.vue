@@ -29,4 +29,7 @@ export default {
   color: #333;
   margin-top: 80px;
 }
+a{
+  color: inherit;
+}
 </style>

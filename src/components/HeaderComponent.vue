@@ -2,7 +2,7 @@
   <div class="headerComponent">
     <b-navbar class="bnavbar" toggleable="md" type="light" variant="light" fixed="top">
     <b-navbar-brand><router-link to="/">
-      <img id="logo" src="../assets/logo.png" alt="Logo">
+      <span id="logo"></span>
     </router-link></b-navbar-brand>
 
     <b-navbar-toggle target="nav_collapse" />
@@ -65,11 +65,17 @@ export default {
 }
 #logo{
   height: 60px;
+  width: 150px;
   position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../assets/logo.png');
 }
 @media screen and (max-width: 992px) {
   #logo {
     height: 40px;
+    width: 100px;
   }
 }
 </style>
