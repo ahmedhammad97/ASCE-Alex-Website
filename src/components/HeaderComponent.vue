@@ -47,7 +47,7 @@ export default {
 
 <style scoped>
 .headerComponent{
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 .item{
   color: #333;

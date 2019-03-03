@@ -14,7 +14,5 @@ export default {
 </script>
 
 <style scoped>
-.home{
-  min-height: 1000px
-}
+
 </style>

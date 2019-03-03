@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <router-view></router-view>
+    <router-view id="body"></router-view>
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -27,9 +27,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #333;
-  margin-top: 80px;
+  text-decoration: none;
 }
 a{
   color: inherit;
+}
+#body{
+  min-height: 700px;
 }
 </style>
