@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Now, another random test text</h1>
+    <h1>Home page goes here</h1>
   </div>
 </template>
 

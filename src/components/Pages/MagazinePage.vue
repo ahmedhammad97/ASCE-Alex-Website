@@ -26,7 +26,8 @@ export default {
 <style scoped>
 .intro{
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: left;
   width: 80%;
   margin: auto;
 }
