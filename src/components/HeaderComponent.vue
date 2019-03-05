@@ -18,12 +18,12 @@
 
             <b-nav-item-dropdown id="dropdown" right >
               <template slot="button-content"><span class="item">EVENTS</span></template>
-              <b-dropdown-item id="megaEvent" href="#">Construction Conference</b-dropdown-item>
-              <b-dropdown-item href="#">Visits</b-dropdown-item>
-              <b-dropdown-item href="#">Seminars</b-dropdown-item>
-              <b-dropdown-item href="#">Courses</b-dropdown-item>
-              <b-dropdown-item href="#">Competitions</b-dropdown-item>
-              <b-dropdown-item href="#">Community Activities</b-dropdown-item>
+              <b-dropdown-item id="megaEvent"><router-link class="events" to="/events/conference">Construction Conference</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link class="events" to="/events/visits">Visits</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link class="events" to="/events/seminars">Seminars</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link class="events" to="/events/courses">Courses</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link class="events" to="/events/competitions">Competitions</router-link></b-dropdown-item>
+              <b-dropdown-item><router-link class="events" to="/events/activities">Community Activities</router-link></b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item><router-link class="item" to="/volunteers">VOLUNTEERS</router-link></b-nav-item>
@@ -59,8 +59,15 @@ export default {
   border-bottom: 3px solid #0c5fa8;
   color: #0c5fa8;
 }
+.events{
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
 #megaEvent{
   background-color: #0c5fa8;
+}
+#megaEvent .events{
   color: white;
 }
 #logo{

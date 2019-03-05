@@ -1,12 +1,12 @@
 <template>
-  <div class="events">
+  <div class="courses">
 
   </div>
 </template>
 
 <script>
 export default {
-  name: 'EventsPage',
+  name: 'CoursesPage',
   methods: {
 
   }
