@@ -1,5 +1,95 @@
 <template>
   <div class="conference">
+    <h1>Construction Conference</h1>
+    <br />
+
+    <section class="vision">
+      <h2>Vision</h2>
+      <p>Our vision was to improve the attendees' skills and enrich them with good variety of information about the latest technology in the construction field.</p>
+    </section>
+
+    <section class="mission">
+      <h2>Mission</h2>
+      <p>One of the main problems that face engineers in our country is the lack of knowledge about modern technologies used nowadays to construct the future and not being able to release their imagination due to the shortage of real life constructed examples to practice on and add to it. Overcoming this problem is what “Construction Conference” seeking for, in addition to guide engineers to new creative tracks of research and development to create a new generation which will lead our country to an actual revolution in the world of Construction.</p>
+    </section>
+
+    <section class="objectives">
+      <h2>Objectives</h2>
+      <ul>
+        <li>Develop engineering students’ competencies.</li>
+        <li>Ensure that engineering students are aware of their responsibilities as future engineers.</li>
+        <li>Increase Hands-on experience throughout innovative workshops.</li>
+      </ul>
+    </section>
+
+    <br /><br />
+
+    <section class="tabs">
+      <b-card no-body>
+        <b-tabs pills card>
+
+          <b-tab title="Conference '18" active><b-card-text>
+            <h5>The Conference took place in 3 consecutive days, having a variety of academic sessions and case study talks. In order to achieve our objectives, Construction Conference’18 focused on four main themes as follows:</h5>
+            <br />
+
+            <h4>Transportation Engineering:</h4>
+            <p>Nowadays, transportation planning has become one of the most significant engineering branches all over the world. It includes several Construction and Architectural aspects which will be discussed profoundly throughout the sessions.</p>
+            <br />
+
+            <h4>Environmental Engineering</h4>
+            <p>One of the leading engineering branches, which is concerned with energy efficiency, sustainable design, up cycling and recycling in order to construct buildings with a net positive environmental impact. Several topics are enrolled in this theme.</p>
+            <br />
+
+            <h4>Significant Engineering Topics</h4>
+            <p>There are various topics that we as students or even junior engineers know nothing about. Thus, this theme aims to present interesting topics that we barely hear about.</p>
+
+            <center>
+              <h4><b>Sponsors and Parteners</b></h4>
+              <br />
+              <ul>
+                <li class="sponsor">Amreyah Cement</li>
+                <li class="sponsor">Mancrew</li>
+                <li class="sponsor">Buckets</li>
+                <li class="sponsor">Fuman cheese</li>
+                <li class="sponsor">Nola Cupcakes</li>
+                <li class="sponsor">Burger Factory</li>
+                <li class="sponsor">Villa Yacoub</li>
+              </ul>
+            </center>
+            <br />
+
+            <h4>Timeline</h4>
+            <p>Construction Conference’ 18 took place in the 3rd,4th and 5th of September 2018 in Faculty of Engineering Alexandria University.</p>
+            <br />
+
+            <img src="" alt="Construction Conference '18 group photo" class="groupPhoto">
+
+          </b-card-text></b-tab>
+
+          <b-tab title="Conference '16"><b-card-text>
+            <h4>Our Methodology was:</h4>
+            <p class="moto">"We shape our buildings; thereafter they shape us."</p>
+            <br />
+
+            <h4>The content of C’16 aimed to achieve its objectives through:</h4>
+            <ul>
+              <li>Defining the qualifications that any engineer must have to help designing our future using creativity and hard work through workshops to stimulate their hidden abilities to reach more.</li>
+              <li>Expand the perception of our young engineers by showing them new perspectives used in construction nowadays such as Skyscrapers, green buildings and under water construction to achieve the urbanization of mankind and that’s through intensive sessions given by trusted engineers.</li>
+              <li>These sessions and workshops were mainly dedicated to provide students with the most advanced programs and its applications in  construction  and designing process nowadays including the project management applications.</li>
+            </ul>
+            <br />
+
+            <h4>Timeline</h4>
+            <p>The Conference was held on Monday, Tuesday, and Wednesday – 5th, 6th, and 7th September, 2016.</p>
+            <br />
+
+            <img src="" alt="Construction Conference '16 group photo" class="groupPhoto">
+          </b-card-text></b-tab>
+
+        </b-tabs>
+      </b-card>
+    </section>
+    <br /><br />
 
   </div>
 </template>
@@ -14,5 +104,49 @@ export default {
 </script>
 
 <style scoped>
+.conference{
+  padding-left: 80px;
+  padding-right: 20px;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
+}
+p, li{
+  font-size: 18px;
+}
+li{
+  list-style-type: square;
+}
+section{
+  text-align: left;
+}
+.moto{
+  font-size: 20px;
+  font-style: italic;
+}
+.sponsor{
+  background-color: #0c5fa8;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+  font-weight: bold;
+  display: inline-grid;
+}
 
+@media screen and (max-width: 992px){
+  .conference{
+    padding-left: 20px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+}
 </style>
