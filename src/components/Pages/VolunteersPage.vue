@@ -18,13 +18,13 @@
       <div class="viceAndTreasurer">
         <b-row>
           <b-col sm="12" md="6" class="avatar">
-            <img src="../../assets/members/avatar.png" alt="Vice President">
+            <img src="../../assets/members/normalbg.jpg" alt="Vice President">
             <p class="name">Ibrahim Ashraf</p>
             <p class="role">Vice President</p>
           </b-col>
 
           <b-col sm="12" md="6" class="avatar">
-            <img src="../../assets/members/avatar.png" alt="Treasurer">
+            <img src="../../assets/members/blackbg.jpg" alt="Treasurer">
             <p class="name">Mohamed Samak</p>
             <p class="role">Treasurer</p>
           </b-col>
@@ -238,6 +238,7 @@ h2{
 .avatar img{
   border-radius: 50%;
   width: 200px;
+  height: 200px;
   margin-bottom: 20px;
 }
 .avatar p{

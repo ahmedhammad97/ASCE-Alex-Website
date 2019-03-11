@@ -6,12 +6,14 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import LightTimeline from 'vue-light-timeline';
+import VueCarousel from 'vue-carousel';
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(Routes)
 Vue.use(BootstrapVue)
 Vue.use(LightTimeline);
+Vue.use(VueCarousel);
 
 const router = new VueRouter({
   routes: Routes,

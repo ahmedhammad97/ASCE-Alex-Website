@@ -62,7 +62,7 @@
             <p>Construction Conference’ 18 took place in the 3rd,4th and 5th of September 2018 in Faculty of Engineering Alexandria University.</p>
             <br />
 
-            <img src="" alt="Construction Conference '18 group photo" class="groupPhoto">
+            <img src="../../../assets/events/c18.jpg" alt="Construction Conference '18 group photo" class="groupPhoto">
 
           </b-card-text></b-tab>
 
@@ -83,7 +83,7 @@
             <p>The Conference was held on Monday, Tuesday, and Wednesday – 5th, 6th, and 7th September, 2016.</p>
             <br />
 
-            <img src="" alt="Construction Conference '16 group photo" class="groupPhoto">
+            <img src="../../../assets/events/c16.jpg" alt="Construction Conference '16 group photo" class="groupPhoto">
           </b-card-text></b-tab>
 
         </b-tabs>
@@ -137,6 +137,13 @@ section{
   font-weight: bold;
   display: inline-grid;
 }
+.groupPhoto{
+  width: 90%;
+  border: 3px solid #19a1cf;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 @media screen and (max-width: 992px){
   .conference{
@@ -147,6 +154,12 @@ section{
   }
   h2{
     font-size: 25px;
+  }
+  .sponsor{
+    display: block;
+  }
+  ul{
+    padding: 0;
   }
 }
 </style>
