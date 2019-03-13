@@ -160,6 +160,7 @@ section{
   }
   ul{
     padding: 0;
+    margin-left: 20px;
   }
 }
 </style>

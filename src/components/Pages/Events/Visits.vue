@@ -1,19 +1,17 @@
 <template>
   <div class="visits">
     <h1>Visits</h1>
-    <br />
 
-    <carousel id="carousel" :perPage="1" :centerMode="true" :navigationEnabled="true" :speed="1000">
-      <slide>
-        Slide 1 Content
+    <carousel id="carousel" :perPage="1" :centerMode="true" :navigationEnabled="true" :speed="1000" paginationActiveColor="#333" paginationColor="lightgrey" :minSwipeDistance="40">
+
+      <slide class="slide" v-for="slide in slides" :key="slide.title">
+        <h2>{{slide.title}}</h2>
+        <p v-html="slide.body"></p>
+        <img :src="slide.img" :alt="slide.imgAlt">
       </slide>
-      <slide>
-        Slide 2 Content
-      </slide>
-      <slide>
-        Slide 3 Content
-      </slide>
+
     </carousel>
+    <br />
 
   </div>
 </template>
@@ -23,19 +21,24 @@ export default {
   name: 'VisitsPage',
   data(){
     return{
-      transparent: require('../../../assets/transparent.png'),
-      visits: [
+      slides: [
         {
-          heading: 'Visit1',
-          body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          img : require('../../../assets/events/c18.jpg'),
-          alt: 'This is alt one'
+          title: 'New Administrative Capital of Egypt Visit',
+          body: 'This was the first visit to be launched from Alexandria University to the Mega projects in The New Administrative Capital of Egypt.<br /><b>Number of participants: 46</b>',
+          img : require('../../../assets/events/newCap.jpg'),
+          imgAlt: 'Group photo to New Admin Capital'
         },
         {
-          heading: 'Visit2',
-          body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          img : require('../../../assets/events/c16.jpg'),
-          alt: 'This is alt two'
+          title: 'Steel Site Field Trip',
+          body: 'As we believe that being involved in the labor market can enhance the students\' skills and knowledge, we visited this under construction Steel Structures site under the supervision of AlexSteel Company.<br />The trip was for the 3rd and 4th year students according to the faculty syllabuses to make sure that the students get the most benefits of it.<br /><b>Speaker: Eng. Ahmed Saeed the project manager of the site.</b>',
+          img : require('../../../assets/events/steel.jpg'),
+          imgAlt: 'Group photo to Steel site field'
+        },
+        {
+          title: 'Sidi Gaber Site Visit',
+          body: 'In order to bridge the gap between academics and site experience, we managed a site visit to Sidi Gaber to observe the Construction works there.<br /><b>Number of Participants: 46</b>',
+          img : require('../../../assets/events/sidiGaber.jpg'),
+          imgAlt: 'Group photo to Sidi gaber bridge site'
         },
       ]
     }
@@ -50,14 +53,18 @@ export default {
 #carousel{
   width: 80%;
   margin: auto;
+  margin-top: 40px;
 }
-.carouselText{color:red; font-size: 20px;}
-.carouselHeading{color: blue; font-size: 30px;}
-.carouselImg{width: 80%;}
+.slide img{
+  width: 90%;
+}
+.slide h2{
+  font-weight: bold;
+  font-size: 30px;
+}
+
 
 @media screen and (max-width: 992px){
-  #carousel{
-    margin-top: 100px;
-  }
+
 }
 </style>
