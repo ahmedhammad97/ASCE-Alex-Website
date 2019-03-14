@@ -1,34 +1,22 @@
 <template>
   <div class="seminars">
 
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion1 variant="info">Accordion 1</b-button>
+    <h1>Seminars</h1>
+    <br />
+
+    <b-card no-body v-for="seminar in seminars" :key="seminar.name" class="seminar">
+
+      <b-card-header role="tab" class="seminarHeader">
+        <b-button block v-b-toggle="seminar.name" class="seminarName">{{seminar.title}}</b-button>
       </b-card-header>
-      <b-collapse id="accordion1" accordion="my-accordion" role="tabpanel">
+
+      <b-collapse :id="seminar.name" role="tabpanel" class="seminarBody" accordion="asceSeminars">
         <b-card-body>
-          <p class="card-text">I start opened because <code>visible</code> is <code>true</code></p>
-          <p class="card-text">Bla Bla</p>
+          <p v-html="seminar.body"></p>
+          <img :src="seminar.img" :alt="seminar.alt">
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion2 variant="info">Accordion 2</b-button>
-      </b-card-header>
-      <b-collapse id="accordion2" accordion="my-accordion" role="tabpanel">
-        <b-card-body<p class="card-text">bla bla</p></b-card-body>
-      </b-collapse>
-    </b-card>
-
-    <b-card no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion3 variant="info">Accordion 3</b-button>
-      </b-card-header>
-      <b-collapse id="accordion3" accordion="my-accordion" role="tabpanel">
-        <b-card-body><p class="card-text">Blo Blo</p></b-card-body>
-      </b-collapse>
     </b-card>
 
   </div>
@@ -37,6 +25,36 @@
 <script>
 export default {
   name: 'SeminarsPage',
+  data(){
+    return {
+      seminars: [
+        {
+          title: '\"Wired For Brilliance\" Seminar',
+          name: 'wired',
+          body: 'In cooperation with Global Next Research institute we hosted and organized this seminar which was all about sorting out the important stuff regarding relationships, emotional intelligence and how you relate to a life of purpose.<br />Speaker: Dr. Phil Johnson.',
+          img: require('../../../assets/events/c16.jpg'),
+          alt: 'sdsfds'
+        },
+        {
+          title: 'Tunnels Seminar',
+          name: 'tunnels',
+          body: 'The seminar’s main objective was to introduce undergrads to one of the most vital fields in Civil Engineering and give them the opportunity to know more about it. The seminar was conducted by Prof. Dr. Ahmed Shawky at Faculty of Engineering Alexandria University.',
+        },
+        {
+          title: 'Living the Building Challenge Seminar',
+          name: 'challenge',
+          body: 'The seminar offered a deeper look into Living Building Challenge’s definition, its dimensions, and its uses. The Living Building Challenge (LBC) is a certified program that defines the most advanced measure of sustainability, providing a framework for design, construction and the symbiotic relationship between people and all aspects of the built environment.<br />Speaker: Eng. Amira Yacoub<br />The Seminar took place in the New Library at Faculty of Engineering, Alexandria University.',
+          img: require('../../../assets/events/c16.jpg'),
+          alt: 'sdsfds'
+        },
+        {
+          title: 'Research 101',
+          name: 'research',
+          body: 'Research 101 aims to develop the research skills needed for engineers to be updated with new technologies in addition to providing them with all information about this significant field in Civil engineering. Participants were given a series of sessions held by professional instructors to make them capable of writing scientific articles in a professional way.<br />Number of participants: 20',
+        },
+      ]
+    }
+  },
   methods: {
 
   }
@@ -44,5 +62,38 @@ export default {
 </script>
 
 <style scoped>
+.seminar{
+  width: 80%;
+  margin: auto;
+  border: 0;
+}
+.seminarHeader{
+  padding: 0;
+  margin-bottom: 20px;
+}
+.seminarBody{
+  background-color: #19a1cf;
+  margin-bottom: 20px;
+  margin-top: -25px;
+  color: white;
+}
+.seminarName{
+  font-size: 25px;
+  padding: 10px;
+  background-color: #0c5fa8;
+  color: white;
+  border: 0;
+}
+.seminarName:hover{
+  background-color: #19a1cf;
+  transition: 0.5s ease-in-out;
+}
+.seminarName:focus{
+  box-shadow: 0 0 0 0 white;
+}
+.seminarBody img{
+  width: 90%;
+}
+p{font-size: 20px;}
 
 </style>
