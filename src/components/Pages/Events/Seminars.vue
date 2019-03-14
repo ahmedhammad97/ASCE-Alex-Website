@@ -29,28 +29,28 @@ export default {
     return {
       seminars: [
         {
-          title: '\"Wired For Brilliance\" Seminar',
+          title: '"Wired For Brilliance" Seminar',
           name: 'wired',
-          body: 'In cooperation with Global Next Research institute we hosted and organized this seminar which was all about sorting out the important stuff regarding relationships, emotional intelligence and how you relate to a life of purpose.<br />Speaker: Dr. Phil Johnson.',
+          body: 'In cooperation with Global Next Research institute we hosted and organized this seminar which was all about sorting out the important stuff regarding relationships, emotional intelligence and how you relate to a life of purpose.<br /><b>Speaker: Dr. Phil Johnson.</b>',
           img: require('../../../assets/events/c16.jpg'),
           alt: 'sdsfds'
         },
         {
           title: 'Tunnels Seminar',
           name: 'tunnels',
-          body: 'The seminar’s main objective was to introduce undergrads to one of the most vital fields in Civil Engineering and give them the opportunity to know more about it. The seminar was conducted by Prof. Dr. Ahmed Shawky at Faculty of Engineering Alexandria University.',
+          body: 'The seminar’s main objective was to introduce undergrads to one of the most vital fields in Civil Engineering and give them the opportunity to know more about it.<br /><b>The seminar was conducted by Prof. Dr. Ahmed Shawky at Faculty of Engineering Alexandria University.</b>',
         },
         {
           title: 'Living the Building Challenge Seminar',
           name: 'challenge',
-          body: 'The seminar offered a deeper look into Living Building Challenge’s definition, its dimensions, and its uses. The Living Building Challenge (LBC) is a certified program that defines the most advanced measure of sustainability, providing a framework for design, construction and the symbiotic relationship between people and all aspects of the built environment.<br />Speaker: Eng. Amira Yacoub<br />The Seminar took place in the New Library at Faculty of Engineering, Alexandria University.',
+          body: 'The seminar offered a deeper look into Living Building Challenge’s definition, its dimensions, and its uses. The Living Building Challenge (LBC) is a certified program that defines the most advanced measure of sustainability, providing a framework for design, construction and the symbiotic relationship between people and all aspects of the built environment.<br /><b>Speaker: Eng. Amira Yacoub<br />The Seminar took place in the New Library at Faculty of Engineering, Alexandria University.</b>',
           img: require('../../../assets/events/c16.jpg'),
           alt: 'sdsfds'
         },
         {
           title: 'Research 101',
           name: 'research',
-          body: 'Research 101 aims to develop the research skills needed for engineers to be updated with new technologies in addition to providing them with all information about this significant field in Civil engineering. Participants were given a series of sessions held by professional instructors to make them capable of writing scientific articles in a professional way.<br />Number of participants: 20',
+          body: 'Research 101 aims to develop the research skills needed for engineers to be updated with new technologies in addition to providing them with all information about this significant field in Civil engineering. Participants were given a series of sessions held by professional instructors to make them capable of writing scientific articles in a professional way.<br /><b>Number of participants: 20</b>',
         },
       ]
     }
