@@ -14,13 +14,6 @@
       <b-button size="sm" class="float-right" variant="primary" @click="comp.show=false" slot="modal-footer">Close</b-button>
     </b-modal>
 
-
-      <!-- <div class="comp" v-for="comp in comps" :key="comp.title">
-        <h2>{{comp.title}}</h2>
-        <p v-html="comp.body"></p>
-        <img :src="comp.img" :alt="comp.alt">
-      </div> -->
-
   </div>
 </template>
 
