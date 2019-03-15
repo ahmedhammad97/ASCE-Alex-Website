@@ -8,7 +8,7 @@
       <div class="president">
         <b-row>
           <b-col sm="12" class="avatar">
-            <img src="../../assets/members/avatar.png" alt="President">
+            <img src="../../assets/members/Nour.jpg" alt="President">
             <p class="name">Nour El Heweity</p>
             <p class="role">President</p>
           </b-col>
@@ -18,13 +18,13 @@
       <div class="viceAndTreasurer">
         <b-row>
           <b-col sm="12" md="6" class="avatar">
-            <img src="../../assets/members/normalbg.jpg" alt="Vice President">
+            <img src="../../assets/members/IbrahimAshraf.jpg" alt="Vice President">
             <p class="name">Ibrahim Ashraf</p>
             <p class="role">Vice President</p>
           </b-col>
 
           <b-col sm="12" md="6" class="avatar">
-            <img src="../../assets/members/blackbg.jpg" alt="Treasurer">
+            <img src="../../assets/members/MohamedSamak.jpg" alt="Treasurer">
             <p class="name">Mohamed Samak</p>
             <p class="role">Treasurer</p>
           </b-col>
@@ -64,52 +64,57 @@ export default {
         {
           name: 'Mohamed Farrag',
           role: 'Academic Committe Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/MohamedFarrag.jpg')
         },
         {
           name: 'Mai El Zoherey',
           role: 'Human Resources Committe Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/MaiElZoherey.jpg')
         },
         {
           name: 'Abdallah Saad',
           role: 'Organization Committe Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/AbdallahSaad.jpg')
         },
         {
           name: 'Mostafa Hafez',
           role: 'Public Relations Committe Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/MostafaHafez.jpg')
         },
         {
           name: 'Rawan Maher',
           role: 'Media Committe Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/RawanMaher.jpg')
         },
         {
           name: 'Mohamed El Khaiat',
           role: 'Academic Committe Vice Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/MohamedElKhaiat.jpg')
         },
         {
           name: 'Eslam Adel',
           role: 'Human Resources Committe Vice Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/EslamAdel.jpg')
         },
         {
           name: 'Mahmoud Ashraf',
           role: 'Organization Committe Vice Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/MahmoudAshraf.jpg')
         },
         {
           name: 'Nour Balbaa',
           role: 'Public Relations Committe Vice Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/NourBalbaa.jpg')
         },
         {
           name: 'Amr Shaher',
           role: 'Media Committe Vice Head',
-          image: require('../../assets/members/avatar.png')
+          image: require('../../assets/members/AmrShaher.jpg')
+        },
+        {
+          name: 'Ahmed Hammad',
+          role: 'Software Unit Head',
+          image: require('../../assets/members/AhmedHammad.jpg')
         }
       ],
       committies: [
@@ -237,8 +242,8 @@ h2{
 
 .avatar img{
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin-bottom: 20px;
 }
 .avatar p{
