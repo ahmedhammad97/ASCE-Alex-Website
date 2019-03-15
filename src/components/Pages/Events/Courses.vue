@@ -7,11 +7,11 @@
     <b-card no-body class="courseBody">
       <b-tabs card>
 
-      <b-tab title="STAAD Pro - Training course" active>
+      <b-tab title="STAAD Pro" active>
         <b-card-text class="courseText">
           <p>In cooperation with Bentley Systems for software we organized a training course about the STAAD Pro software, and attached is the agenda of the two days event. <br />It was a new software for the students to deal with in addition the training was free of charges which made it even possible for them to attend.</p>
           <p><b>Speaker: Eng. BISWATOSH DAS PURKAYASTHA</b></p>
-          <img src="../../../assets/events/c16.jpg" alt="" class="courseImg">
+          <img src="../../../assets/events/staad16.jpg" alt="Group image of the participants" class="courseImg">
         </b-card-text>
       </b-tab>
 
