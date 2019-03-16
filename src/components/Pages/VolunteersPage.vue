@@ -35,7 +35,7 @@
       <div class="restOfBoard">
         <b-row>
           <b-col class="avatar" v-for="member in boardMembers" :key="member.name">
-            <b-img-lazy :src="member.image" :blank-src="require('../../assets/placeholder.jpg')" v-bind:alt="member.name"/>
+            <b-img-lazy :src="member.image" :blank-src="require('../../assets/placeholder.jpg')" offset="700" v-bind:alt="member.name"/>
             <p class="name">{{member.name}}</p>
             <p class="role">{{member.role}}</p>
           </b-col>

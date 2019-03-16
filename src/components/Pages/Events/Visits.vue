@@ -8,7 +8,7 @@
       <slide class="slide" v-for="slide in slides" :key="slide.title">
         <h2>{{slide.title}}</h2>
         <p v-html="slide.body"></p>
-        <b-img-lazy :src="slide.img" :blank-src="require('../../../assets/logoPlaceholder.jpg')" :alt="slide.imgAlt" />
+        <b-img-lazy :src="slide.img" :blank-src="require('../../../assets/logoPlaceholder.jpg')" offset="800" :alt="slide.imgAlt" />
       </slide>
 
     </carousel>
