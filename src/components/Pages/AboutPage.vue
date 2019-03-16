@@ -1,7 +1,7 @@
 <template>
   <div class="about">
+    <h1>About The American Society of Civil Engineers</h1>
     <article>
-      <h1>About The American Society of Civil Engineers</h1>
       <light-timeline :items='items' class="timeline"></light-timeline>
       <p class="globalAsce">To know more about ASCE, please visit <a href="http://www.ASCE.org" target="_blank">http://www.ASCE.org</a></p>
     </article>
@@ -32,9 +32,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-
   }
 }
 </script>

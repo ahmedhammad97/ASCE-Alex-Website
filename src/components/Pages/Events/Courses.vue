@@ -1,6 +1,5 @@
 <template>
   <div class="courses">
-
     <h1>Courses</h1>
     <br />
 
@@ -11,7 +10,7 @@
         <b-card-text class="courseText">
           <p>In cooperation with Bentley Systems for software we organized a training course about the STAAD Pro software, and attached is the agenda of the two days event. <br />It was a new software for the students to deal with in addition the training was free of charges which made it even possible for them to attend.</p>
           <p><b>Speaker: Eng. BISWATOSH DAS PURKAYASTHA</b></p>
-          <b-img-lazy src="../../../assets/events/staad16.jpg" :blank-src="require('../../../assets/logoPlaceholder.jpg')" alt="Group image of the participants" class="courseImg"/>
+          <b-img-lazy :src="require('../../../assets/events/staad16.jpg')" :blank-src="require('../../../assets/logoPlaceholder.jpg')" alt="Group image of the participants" class="courseImg"/>
         </b-card-text>
       </b-tab>
 
@@ -47,10 +46,7 @@
 
 <script>
 export default {
-  name: 'CoursesPage',
-  methods: {
-
-  }
+  name: 'CoursesPage'
 }
 </script>
 

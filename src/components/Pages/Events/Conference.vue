@@ -96,10 +96,7 @@
 
 <script>
 export default {
-  name: 'ConferencePage',
-  methods: {
-
-  }
+  name: 'ConferencePage'
 }
 </script>
 

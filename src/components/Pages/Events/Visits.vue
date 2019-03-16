@@ -2,6 +2,7 @@
   <div class="visits">
     <h1>Visits</h1>
 
+    <!-- Parameters of Vue-carousel -->
     <carousel id="carousel" :perPage="1" :centerMode="true" :navigationEnabled="true" :speed="1000" paginationActiveColor="#333" paginationColor="lightgrey" :minSwipeDistance="40">
 
       <slide class="slide" v-for="slide in slides" :key="slide.title">

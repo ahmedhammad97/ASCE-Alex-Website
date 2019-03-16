@@ -217,9 +217,6 @@ export default {
           }
       ]
     }
-  },
-  methods: {
-
   }
 }
 </script>

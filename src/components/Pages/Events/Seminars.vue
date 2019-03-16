@@ -1,6 +1,5 @@
 <template>
   <div class="seminars">
-
     <h1>Seminars</h1>
     <br />
 
@@ -39,6 +38,8 @@ export default {
           title: 'Tunnels Seminar',
           name: 'tunnels',
           body: 'The seminar’s main objective was to introduce undergrads to one of the most vital fields in Civil Engineering and give them the opportunity to know more about it.<br /><b>The seminar was conducted by Prof. Dr. Ahmed Shawky at Faculty of Engineering Alexandria University.</b>',
+          img: "",
+          alt: ""
         },
         {
           title: 'Living the Building Challenge Seminar',
@@ -56,9 +57,6 @@ export default {
         },
       ]
     }
-  },
-  methods: {
-
   }
 }
 </script>

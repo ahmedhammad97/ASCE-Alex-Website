@@ -1,10 +1,13 @@
 <template>
   <div class="footerComponent">
+
     <span class="title"><br />American Society of Civil Engineers | Alexandria Student Chapter</span>
     <br /><br />
+
     <span class="email"><span>
       <img src="../assets/icons/iconmail.png" />
     </span>info.ascealexsc@gmail.com</span>
+
     <div class="icons">
       <a href="https://www.facebook.com/ASCEalexSC" target="_blank"><span class="social">
         <img src="../assets/icons/iconfacebook.png" />
@@ -16,6 +19,7 @@
         <img src="../assets/icons/iconyoutube.png" />
       </span></a>
     </div>
+
     <div class="copyrights">
       Copyrights reserved 2019 © <a target="_blank" href="http://www.ahmedhammad.me">Ahmed Hammad</a>
     </div>
@@ -24,10 +28,7 @@
 
 <script>
 export default {
-  name: 'FooterComponent',
-  methods: {
-
-  }
+  name: 'FooterComponent'
 }
 </script>
 

@@ -1,15 +1,15 @@
 <template>
   <div class="headerComponent">
     <b-navbar class="bnavbar" toggleable="md" type="light" variant="light" fixed="top">
+
     <b-navbar-brand><router-link to="/">
+      <!-- Logo rendered as background to this span -->
       <span id="logo"></span>
     </router-link></b-navbar-brand>
 
     <b-navbar-toggle target="nav_collapse" />
 
     <b-collapse is-nav id="nav_collapse">
-
-      <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
 
           <b-navbar-nav>
@@ -38,10 +38,7 @@
 
 <script>
 export default {
-  name: 'HeaderComponent',
-  methods: {
-
-  }
+  name: 'HeaderComponent'
 }
 </script>
 
