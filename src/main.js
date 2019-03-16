@@ -17,7 +17,10 @@ Vue.use(VueCarousel);
 
 const router = new VueRouter({
   routes: Routes,
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 })
 
 

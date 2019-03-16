@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <router-view id="body"></router-view>
+    <transition :name="transitionType" mode="out-in">
+      <router-view id="body"></router-view>
+    </transition>
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -15,6 +17,35 @@ export default {
   components: {
     HeaderComponent,
     FooterComponent
+  },
+  data(){
+    return{
+      routes: [
+        '/',
+        '/about',
+        '/magazine',
+        '/events/conference',
+        '/events/visits',
+        '/events/seminars',
+        '/events/courses',
+        '/events/competitions',
+        '/events/activities',
+        '/volunteers',
+      ]
+    }
+  },
+  methods: {
+    getRoutesRanks: function(first, second){
+      return [this.routes.indexOf(first), this.routes.indexOf(second)]
+    }
+  },
+  watch: {
+    '$route' (to, from) {
+      let ranks = this.getRoutesRanks(from.path, to.path)
+      if(from.path[1] === 'e' && to.path[1] === 'e'){this.transitionType = ranks[0] < ranks[1] ? 'slide-left' : 'slide-right'}
+      else if(from.path[1] !== 'e' && to.path[1] !== 'e'){this.transitionType = ranks[0] < ranks[1] ? 'slide-left' : 'slide-right'}
+      else{this.transitionType = 'fade'}
+    }
   }
 }
 </script>
@@ -41,5 +72,35 @@ h2{
 }
 p{
   font-size: 20px;
+}
+.fade-enter-active, .fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
 }
 </style>
