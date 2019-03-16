@@ -11,7 +11,7 @@
           <p>{{activity.body}}</p>
         </b-col>
 
-        <b-col sm="12" md="6" class="activityCol"><img :src="activity.img" :alt="activity.alt"/></b-col>
+        <b-col sm="12" md="6" class="activityCol"><b-img-lazy :src="activity.img" :blank-src="require('../../../assets/logoPlaceholder.jpg')" :alt="activity.alt"/></b-col>
 
       </b-row>
     </div>

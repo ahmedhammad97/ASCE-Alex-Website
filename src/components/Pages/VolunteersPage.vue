@@ -8,7 +8,7 @@
       <div class="president">
         <b-row>
           <b-col sm="12" class="avatar">
-            <img src="../../assets/members/Nour.jpg" alt="President">
+            <b-img-lazy :src="require('../../assets/members/Nour.jpg')" :blank-src="require('../../assets/placeholder.jpg')" alt="President"/>
             <p class="name">Nour El Heweity</p>
             <p class="role">President</p>
           </b-col>
@@ -18,13 +18,13 @@
       <div class="viceAndTreasurer">
         <b-row>
           <b-col sm="12" md="6" class="avatar">
-            <img src="../../assets/members/IbrahimAshraf.jpg" alt="Vice President">
+            <b-img-lazy :src="require('../../assets/members/IbrahimAshraf.jpg')" :blank-src="require('../../assets/placeholder.jpg')" alt="Vice President"/>
             <p class="name">Ibrahim Ashraf</p>
             <p class="role">Vice President</p>
           </b-col>
 
           <b-col sm="12" md="6" class="avatar">
-            <img src="../../assets/members/MohamedSamak.jpg" alt="Treasurer">
+            <b-img-lazy :src="require('../../assets/members/MohamedSamak.jpg')" :blank-src="require('../../assets/placeholder.jpg')" alt="Treasurer"/>
             <p class="name">Mohamed Samak</p>
             <p class="role">Treasurer</p>
           </b-col>
@@ -35,7 +35,7 @@
       <div class="restOfBoard">
         <b-row>
           <b-col class="avatar" v-for="member in boardMembers" :key="member.name">
-            <img v-bind:src="member.image" v-bind:alt="member.name">
+            <b-img-lazy :src="member.image" :blank-src="require('../../assets/placeholder.jpg')" v-bind:alt="member.name"/>
             <p class="name">{{member.name}}</p>
             <p class="role">{{member.role}}</p>
           </b-col>

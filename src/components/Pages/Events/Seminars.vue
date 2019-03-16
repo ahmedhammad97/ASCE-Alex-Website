@@ -13,7 +13,7 @@
       <b-collapse :id="seminar.name" role="tabpanel" class="seminarBody" accordion="asceSeminars">
         <b-card-body>
           <p v-html="seminar.body"></p>
-          <img :src="seminar.img" :alt="seminar.alt">
+          <b-img-lazy :src="seminar.img" :blank-src="require('../../../assets/logoPlaceholder.jpg')" :alt="seminar.alt"/>
         </b-card-body>
       </b-collapse>
 
