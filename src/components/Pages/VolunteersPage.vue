@@ -1,6 +1,6 @@
 <template>
   <div class="volunteers">
-    <h1>ASCE ALEX Family</h1>
+    <h1>ASCE Alex Family</h1>
     <br />
 
     <div class="board" >
@@ -229,11 +229,7 @@ export default {
   width: 90%;
   margin: auto;
 }
-h1{
-  font-size: 40px;
-}
 h2{
-  font-size: 30px;
   background-color: #0c5fa8;
   color: white;
   padding: 10px;
@@ -245,9 +241,6 @@ h2{
   width: 250px;
   height: 250px;
   margin-bottom: 20px;
-}
-.avatar p{
-  font-size: 20px;
 }
 .avatar .name{
   font-weight: bold;
@@ -264,7 +257,6 @@ h2{
 .members li{
   display: inline-grid;
   padding: 10px 20px 10px 20px;
-  font-size: 20px;
   font-weight: bold;
 }
 

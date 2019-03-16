@@ -18,14 +18,14 @@
       <b-tab title="Summer Courses">
         <b-card-text>
           <p>Civil and architectural engineers should stay on track with the day to day advancement in the industry. By attaining and developing their computational skills and advancing it to compete in the booming industry.</p>
-          <h3>Objectives</h3>
+          <h4>Objectives</h4>
           <ul>
             <li>Utilize computational software in the civil and architectural departments.</li>
             <li>Advance in the technology of modeling, analyzing and designing.</li>
             <li>Acknowledge of the impact of engineering technology solutions on the industry.</li>
             <li>Demonstrate the ability of problem solving in a highly efficient, accelerated form.</li>
           </ul>
-          <h3>Offered courses</h3>
+          <h4>Offered courses</h4>
           <ul>
             <li>Autodesk Revit Structure</li>
             <li>Autodesk Navisworks</li>
@@ -65,7 +65,8 @@ export default {
 }
 li{
   list-style-type: none;
-  padding: 10px;
+  padding-bottom: 5px;
   list-style-type: square;
+  font-size: 18px;
 }
 </style>

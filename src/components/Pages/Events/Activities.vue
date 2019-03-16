@@ -74,6 +74,7 @@ export default {
   width: 90%;
   margin: auto;
   border: 2px solid #19a1cf;
+  border-radius: 10px;
 }
 .activityRow{width: 100%; margin: auto; padding: 20px;}
 .dark{

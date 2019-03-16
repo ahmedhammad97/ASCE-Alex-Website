@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <article>
-      <h1>The American Society of Civil Engineers</h1>
+      <h1>About The American Society of Civil Engineers</h1>
       <light-timeline :items='items' class="timeline"></light-timeline>
       <p class="globalAsce">To know more about ASCE, please visit <a href="http://www.ASCE.org" target="_blank">http://www.ASCE.org</a></p>
     </article>
@@ -45,13 +45,11 @@ export default {
   padding-left: 50px;
 }
 h1{
-  margin-left: 70px;
-  font-size: 36px;
+  margin-left: 80px;
 }
 .globalAsce{
   margin-left: 80px;
   margin-top: 30px;
-  font-size: 15px;
 }
 .timeline{
   font-size: 17px;
@@ -74,6 +72,7 @@ h1{
   .timeline{
     margin-left: -50px;
     font-size: 15px;
+    padding-right: 15px;
   }
 }
 </style>

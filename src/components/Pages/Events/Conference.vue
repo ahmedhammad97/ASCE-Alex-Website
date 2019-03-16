@@ -29,7 +29,7 @@
         <b-tabs pills card>
 
           <b-tab title="Conference '18" active><b-card-text>
-            <h5>The Conference took place in 3 consecutive days, having a variety of academic sessions and case study talks. In order to achieve our objectives, Construction Conference’18 focused on four main themes as follows:</h5>
+            <p><i>The Conference took place in 3 consecutive days, having a variety of academic sessions and case study talks. In order to achieve our objectives, Construction Conference’18 focused on four main themes as follows:</i></p>
             <br />
 
             <h4>Transportation Engineering:</h4>
@@ -68,7 +68,7 @@
 
           <b-tab title="Conference '16"><b-card-text>
             <h4>Our Methodology was:</h4>
-            <p class="moto">"We shape our buildings; thereafter they shape us."</p>
+            <p><i>"We shape our buildings; thereafter they shape us."</i></p>
             <br />
 
             <h4>The content of C’16 aimed to achieve its objectives through:</h4>
@@ -108,12 +108,6 @@ export default {
   padding-left: 80px;
   padding-right: 20px;
 }
-h1{
-  font-size: 40px;
-}
-h2{
-  font-size: 30px;
-}
 p, li{
   font-size: 18px;
 }
@@ -122,10 +116,6 @@ li{
 }
 section{
   text-align: left;
-}
-.moto{
-  font-size: 20px;
-  font-style: italic;
 }
 .sponsor{
   background-color: #0c5fa8;

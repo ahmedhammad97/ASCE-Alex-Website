@@ -42,9 +42,6 @@ export default {
         },
       ]
     }
-  },
-  methods: {
-
   }
 }
 </script>
@@ -60,11 +57,5 @@ export default {
 }
 .slide h2{
   font-weight: bold;
-  font-size: 30px;
-}
-
-
-@media screen and (max-width: 992px){
-
 }
 </style>

@@ -41,30 +41,16 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-
   }
 }
 </script>
 
 <style scoped>
-.comp{
-  width: 90%;
-  margin: auto;
-  background-color: #0c5fa8;
-  margin-bottom: 50px;
-  border-radius: 0px 30px 0px 30px;
-  padding: 10px;
-}
-.comp p{
-  font-size: 20px;
-  color: white;
-  text-align: justify;
-  padding: 10px;
-}
 .card{
   margin: 20px;
+}
+p{
+  text-align: left;
 }
 
 </style>

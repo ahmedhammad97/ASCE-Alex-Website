@@ -95,7 +95,7 @@ export default {
 }
 .seminarBody img{
   width: 90%;
+  border-radius: 10px;
 }
-p{font-size: 20px;}
 
 </style>
