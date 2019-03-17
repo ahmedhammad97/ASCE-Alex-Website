@@ -80,6 +80,7 @@ export default {
   #logo {
     height: 40px;
     width: 100px;
+    margin-top: -20px;
   }
 }
 </style>

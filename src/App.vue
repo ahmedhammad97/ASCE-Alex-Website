@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <LoaderComponent :is-loading="isLoading"></LoaderComponent>
     <HeaderComponent></HeaderComponent>
     <transition :name="transitionType" mode="out-in">
       <router-view id="body"></router-view>
@@ -11,15 +12,19 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
+import LoaderComponent from './components/LoaderComponent.vue'
 
 export default {
   name: 'app',
   components: {
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoaderComponent
   },
   data(){
     return{
+      isLoading: true,
+      transitionType: null,
       routes: [
         '/',
         '/about',
@@ -46,6 +51,11 @@ export default {
       else if(from.path[1] !== 'e' && to.path[1] !== 'e'){this.transitionType = ranks[0] < ranks[1] ? 'slide-left' : 'slide-right'}
       else{this.transitionType = 'fade'}
     }
+  },
+  mounted(){
+    setTimeout(() => {
+      this.isLoading = false
+    }, 2000)
   }
 }
 </script>
@@ -59,7 +69,7 @@ export default {
   text-decoration: none;
 }
 #body{
-  min-height: 700px;
+  min-height: 1000px;
 }
 a{
   color: inherit;
