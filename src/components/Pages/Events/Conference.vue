@@ -29,7 +29,7 @@
         <b-tabs pills card>
 
           <b-tab title="Conference '18" active><b-card-text>
-            <p><i>The Conference took place in 3 consecutive days, having a variety of academic sessions and case study talks. In order to achieve our objectives, Construction Conference’18 focused on four main themes as follows:</i></p>
+            <p><i>The Conference took place in 3 consecutive days, having a variety of academic sessions and case study talks. In order to achieve our objectives, Construction Conference’18 focused on three main themes as follows:</i></p>
             <br />
 
             <h4>Transportation Engineering:</h4>

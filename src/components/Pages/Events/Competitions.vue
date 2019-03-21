@@ -31,14 +31,14 @@ export default {
           id: 'egg17',
           show: false
         },
-        {
-          title: 'Egg Protection Device 2016',
-          body: 'In cooperation with ACI AAST Student Chapter, we were honored to hold this competition which objectives were to design and build the highest-impact-load-resistant plain or reinforced concrete Egg Protection Device (EPD), learn about concrete’s sustainable benefits related to durability, impact resistance, and other real-life aspects which an EPD simulates.<br />The EPD Competition was used to evaluate a potential structure for long term protection of a high-value military asset. The structure must be designed to protect the asset (egg) from repeated aerial bombardment as well as potential chemical attack.<br />Reinforcing placement and design plays a large role in the survivability of the structure as well as overall density of the concrete mixture itself. Physical strength was tested by dropping a weight onto the structure. The teams that successfully created a durable structure were rewarded.',
-          img: require('../../../assets/events/epd16.jpg'),
-          alt: 'Group photo with Dean of Faculty of Engineering, Alexandria University',
-          id: 'egg16',
-          show: false
-        },
+        // {
+        //   title: 'Egg Protection Device 2016',
+        //   body: 'In cooperation with ACI AAST Student Chapter, we were honored to hold this competition which objectives were to design and build the highest-impact-load-resistant plain or reinforced concrete Egg Protection Device (EPD), learn about concrete’s sustainable benefits related to durability, impact resistance, and other real-life aspects which an EPD simulates.<br />The EPD Competition was used to evaluate a potential structure for long term protection of a high-value military asset. The structure must be designed to protect the asset (egg) from repeated aerial bombardment as well as potential chemical attack.<br />Reinforcing placement and design plays a large role in the survivability of the structure as well as overall density of the concrete mixture itself. Physical strength was tested by dropping a weight onto the structure. The teams that successfully created a durable structure were rewarded.',
+        //   img: require('../../../assets/events/epd16.jpg'),
+        //   alt: 'Group photo with Dean of Faculty of Engineering, Alexandria University',
+        //   id: 'egg16',
+        //   show: false
+        // },
       ]
     }
   }
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style scoped>
+.competitions{
+  width: 60%;
+  margin: auto;
+}
 .card{
   margin: 150px;
 }
@@ -54,6 +58,7 @@ p{
 }
 
 @media screen and (max-width: 992px){
+  .competitions{width: 90%;}
   .card{margin: 50px;}
 }
 

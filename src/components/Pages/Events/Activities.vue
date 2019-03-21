@@ -40,7 +40,7 @@ export default {
         {
           title: 'Activity Fair \'18',
           body: 'We participated in the Activity Fair at Faculty of Engineering Alexandria University. Our aim was to encourage students to try several workshops in order to enhance their hands-on experience and develop their creativity.',
-          img: require('../../../assets/events/fair19.jpg'),
+          img: require('../../../assets/events/fair18.jpg'),
           alt: 'ASCE info desk',
         },
         {
