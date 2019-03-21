@@ -4,7 +4,7 @@
       <span>We shape our buildings; thereafter they shape us.</span>
     </div>
 
-    <b-carousel class="carousel" fade :interval="6000">
+    <b-carousel class="carousel" fade :interval="4000">
       <b-carousel-slide :img-src="require('../../assets/events/seminar16.jpg')" />
       <b-carousel-slide :img-src="require('../../assets/events/newCap.jpg')" />
       <b-carousel-slide :img-src="require('../../assets/events/sidiGaber.jpg')" />

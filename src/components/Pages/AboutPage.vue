@@ -43,6 +43,7 @@ export default {
 }
 h1{
   margin-left: 80px;
+  text-align: center;
 }
 .globalAsce{
   margin-left: 80px;

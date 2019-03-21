@@ -69,19 +69,21 @@ export default {
   color: white;
 }
 #logo{
-  height: 60px;
+  height: 130.2px;
   width: 150px;
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-top: -20px;
   background-image: url('../assets/logo.png');
+  border: 2px solid #0c5fa8;
+  box-shadow: 0 2px 3px #333;
 }
 @media screen and (max-width: 992px) {
   #logo {
-    height: 40px;
+    height: 87.6px;
     width: 100px;
-    margin-top: -20px;
   }
 }
 </style>

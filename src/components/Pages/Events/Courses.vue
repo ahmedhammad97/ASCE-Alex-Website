@@ -3,16 +3,8 @@
     <h1>Courses</h1>
     <br />
 
-    <b-card no-body class="courseBody">
+    <b-card no-body class="courseBody" active>
       <b-tabs card>
-
-      <b-tab title="STAAD Pro" active>
-        <b-card-text class="courseText">
-          <p>In cooperation with Bentley Systems for software we organized a training course about the STAAD Pro software, and attached is the agenda of the two days event. <br />It was a new software for the students to deal with in addition the training was free of charges which made it even possible for them to attend.</p>
-          <p><b>Speaker: Eng. BISWATOSH DAS PURKAYASTHA</b></p>
-          <b-img-lazy :src="require('../../../assets/events/staad16.jpg')" :blank-src="require('../../../assets/logoPlaceholder.jpg')" offset="800" alt="Group image of the participants" class="courseImg"/>
-        </b-card-text>
-      </b-tab>
 
       <b-tab title="Summer Courses">
         <b-card-text>
@@ -38,6 +30,14 @@
         </b-card-text>
       </b-tab>
 
+      <b-tab title="STAAD Pro">
+        <b-card-text class="courseText">
+          <p>In cooperation with Bentley Systems for software we organized a training course about the STAAD Pro software, and attached is the agenda of the two days event. <br />It was a new software for the students to deal with in addition the training was free of charges which made it even possible for them to attend.</p>
+          <p><b>Speaker: Eng. BISWATOSH DAS PURKAYASTHA</b></p>
+          <b-img-lazy :src="require('../../../assets/events/staad16.jpg')" :blank-src="require('../../../assets/logoPlaceholder.jpg')" offset="800" alt="Group image of the participants" class="courseImg"/>
+        </b-card-text>
+      </b-tab>
+
     </b-tabs>
   </b-card>
 
@@ -57,7 +57,7 @@ export default {
   text-align: left;
 }
 .courseImg{
-  width: 90%;
+  width: 70%;
 }
 li{
   list-style-type: none;

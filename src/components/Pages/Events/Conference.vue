@@ -47,19 +47,19 @@
               <h4><b>Sponsors and Parteners</b></h4>
               <br />
               <ul>
-                <li class="sponsor">Amreyah Cement</li>
-                <li class="sponsor">Mancrew</li>
-                <li class="sponsor">Buckets</li>
-                <li class="sponsor">Fuman cheese</li>
-                <li class="sponsor">Nola Cupcakes</li>
-                <li class="sponsor">Burger Factory</li>
-                <li class="sponsor">Villa Yacoub</li>
+                <li v-for="sponsor in sponsors" class="sponsor" :id="sponsor.id" :key="sponsor.id">
+                  <span>{{sponsor.name}}</span>
+                </li>
               </ul>
             </center>
+
+            <b-tooltip v-for="sponsor in sponsors" :target="sponsor.id" :key="sponsor.id">
+              <img :src="sponsor.url" :alt="sponsor.name + ' logo'" class="sponsorImg">
+            </b-tooltip>
             <br />
 
             <h4>Timeline</h4>
-            <p>Construction Conference’ 18 took place in the 3rd,4th and 5th of September 2018 in Faculty of Engineering Alexandria University.</p>
+            <p>Construction Conference’ 18 took place in the 3rd, 4th and 5th of September 2018 in Faculty of Engineering Alexandria University.</p>
             <br />
 
             <b-img-lazy :src="require('../../../assets/events/c18.jpg')" :blank-src="require('../../../assets/logoPlaceholder.jpg')" offset="800" alt="Construction Conference '18 group photo" class="groupPhoto" />
@@ -96,7 +96,48 @@
 
 <script>
 export default {
-  name: 'ConferencePage'
+  name: 'ConferencePage',
+  data(){
+    return{
+      sponsors: [
+        {
+          name: 'Amreya Cement',
+          id: 'amreyaCement',
+          url: require('../../../assets/sponsors/amreyaCement.jpg')
+        },
+        {
+          name: 'Mancrew',
+          id: 'manCrew',
+          url: require('../../../assets/sponsors/manCrew.jpg')
+        },
+        {
+          name: 'Buckets',
+          id: 'buckets',
+          url: require('../../../assets/sponsors/buckets.jpg')
+        },
+        {
+          name: 'Fuman cheese',
+          id: 'fumanCheese',
+          url: require('../../../assets/sponsors/fumanCheese.jpg')
+        },
+        {
+          name: 'Nola Cupcakes',
+          id: 'nola',
+          url: require('../../../assets/sponsors/nola.jpg')
+        },
+        {
+          name: 'Burger Factory',
+          id: 'burgerFactory',
+          url: require('../../../assets/sponsors/burgerFactory.jpg')
+        },
+        {
+          name: 'Villa Yacoub',
+          id: 'villaYacoub',
+          url: require('../../../assets/sponsors/villaYacoub.jpg')
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -123,6 +164,9 @@ section{
   margin: 15px;
   font-weight: bold;
   display: inline-grid;
+}
+.sponsorImg{
+  width: 50px;
 }
 .groupPhoto{
   width: 90%;

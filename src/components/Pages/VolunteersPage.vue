@@ -73,12 +73,12 @@ export default {
         },
         {
           name: 'Abdallah Saad',
-          role: 'Organization Committe Head',
+          role: 'Organization and Logistics Committe Head',
           image: require('../../assets/members/AbdallahSaad.jpg')
         },
         {
           name: 'Mostafa Hafez',
-          role: 'Public Relations Committe Head',
+          role: 'Public Relations and Fund Raising Committe Head',
           image: require('../../assets/members/MostafaHafez.jpg')
         },
         {
@@ -98,12 +98,12 @@ export default {
         },
         {
           name: 'Mahmoud Ashraf',
-          role: 'Organization Committe Vice Head',
+          role: 'Organization and Logistics Committe Vice Head',
           image: require('../../assets/members/MahmoudAshraf.jpg')
         },
         {
           name: 'Nour Balbaa',
-          role: 'Public Relations Committe Vice Head',
+          role: 'Public Relations and Fund Raising Committe Vice Head',
           image: require('../../assets/members/NourBalbaa.jpg')
         },
         {
@@ -189,7 +189,7 @@ export default {
             ]
           },
           {
-            name: 'Public Relations',
+            name: 'Public Relations and Fund Raising',
             members:[
               'Mahmoud Sherif',
               'Ghada Salah',
