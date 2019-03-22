@@ -48,13 +48,13 @@
               <br />
               <ul>
                 <li v-for="sponsor in sponsors" class="sponsor" :id="sponsor.id" :key="sponsor.id">
-                  <span>{{sponsor.name}}</span>
+                  <img :src="sponsor.url" :alt="sponsor.name + ' logo'" class="sponsorImg">
                 </li>
               </ul>
             </center>
 
             <b-tooltip v-for="sponsor in sponsors" :target="sponsor.id" :key="sponsor.id">
-              <img :src="sponsor.url" :alt="sponsor.name + ' logo'" class="sponsorImg">
+              <span>{{sponsor.name}}</span>
             </b-tooltip>
             <br />
 
@@ -156,9 +156,6 @@ section{
   text-align: left;
 }
 .sponsor{
-  background-color: #0c5fa8;
-  font-size: 15px;
-  color: white;
   padding: 10px;
   border-radius: 10px;
   margin: 15px;
@@ -166,7 +163,8 @@ section{
   display: inline-grid;
 }
 .sponsorImg{
-  width: 50px;
+  width: 80px;
+  border-radius: 10px;
 }
 .groupPhoto{
   width: 90%;
@@ -187,7 +185,8 @@ section{
     font-size: 25px;
   }
   .sponsor{
-    display: block;
+    padding: 5px;
+    margin: 5px;
   }
   ul{
     padding: 0;

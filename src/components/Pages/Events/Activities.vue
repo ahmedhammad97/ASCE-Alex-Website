@@ -89,5 +89,10 @@ export default {
   background-color: white;
   color: #333;
 }
+@media screen and (max-width: 992px){
+  .activity img{
+    width: 80%;
+  }
+}
 
 </style>
