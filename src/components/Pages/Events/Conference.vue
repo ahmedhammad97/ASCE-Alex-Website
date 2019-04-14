@@ -163,7 +163,7 @@ section{
   display: inline-grid;
 }
 .sponsorImg{
-  width: 80px;
+  width: 70px;
   border-radius: 10px;
 }
 .groupPhoto{

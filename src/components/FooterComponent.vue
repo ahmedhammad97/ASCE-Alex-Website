@@ -1,7 +1,7 @@
 <template>
   <div class="footerComponent">
 
-    <span class="title"><br />American Society of Civil Engineers | Alexandria Student Chapter</span>
+    <span class="title"><br />American Society of Civil Engineers | Alexandria University Student Chapter</span>
     <br /><br />
 
     <span class="email"><span>
