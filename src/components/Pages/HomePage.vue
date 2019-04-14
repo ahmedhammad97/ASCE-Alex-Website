@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-    <div class="headings">
-      <span>We shape our buildings; thereafter they shape us.</span>
-    </div>
 
-    <b-carousel class="carousel" fade :interval="4000">
-      <b-carousel-slide :img-src="require('../../assets/events/seminar16.jpg')" />
-      <b-carousel-slide :img-src="require('../../assets/events/newCap.jpg')" />
-      <b-carousel-slide :img-src="require('../../assets/events/sidiGaber.jpg')" />
-    </b-carousel>
+    <div class="banners">
+      <div v-for="banner in banners" :key="banner.name" class="bannerContainer">
+        <router-link :to="banner.route">
+          <span >{{banner.name}}</span>
+          <div :style="{'background-image': 'url(' + banner.bg + ')'}" class="banner"></div>
+        </router-link>
+      </div>
+    </div>
     <br /><br />
 
     <div class="insights">
@@ -41,6 +41,28 @@ export default {
   name: 'HomePage',
   data(){
     return{
+      banners: [
+        {
+          name: "Conferences",
+          bg: require('../../assets/events/c18.jpg'),
+          route: "/events/conference"
+        },
+        {
+          name: "Seminars",
+          bg: require('../../assets/events/BIMSeminar.jpg'),
+          route: "/events/seminars"
+        },
+        {
+          name: "Competitions",
+          bg: require('../../assets/events/epd17.jpg'),
+          route: "/events/competitions"
+        },
+        {
+          name: "Activities",
+          bg: require('../../assets/events/fair19.jpg'),
+          route: "/events/activities"
+        }
+      ],
       insights: [
         {
           id: 'members',
@@ -68,27 +90,45 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
-  .carousel{
+  .banners{
     margin-top: -44px;
-    opacity: 0.65;
-    background-blend-mode: darken;
+    background-color: black;
   }
-  .headings{
-    position: absolute;
-    z-index: 99;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 12%;
+  .banner{
+    height: 500px;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
   }
-  .headings span{
-    font-size: 50px;
-    font-family: 'Architects Daughter', cursive;
-    color: white;
-    background-color: rgba(12,95,168,0.7);
+  .bannerContainer{
+    position: relative;
+  }
+  .banners span{
+    border: 3px solid white;
     padding: 5px;
-    font-style: italic;
-    margin: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    width: 500px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banners span:hover + .banner, .banner:hover{
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+  .banners span:hover{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out
   }
   .insights{
     width: 90%;
@@ -136,10 +176,13 @@ export default {
     transition: all 0.3s ease-in-out;
   }
 
-
   @media screen and (max-width: 992px){
-    .headings span{
-      font-size: 25px;
+    .banners span{
+      font-size: 35px;
+      width: 250px;
+    }
+    .banner{
+      height: 300px;
     }
   }
 </style>
