@@ -29,7 +29,7 @@
     <div class="join">
       <p>New members are always welcomed!</p>
       <br />
-      <a target="_blank" href="https://www.facebook.com/ASCEalexSC"><button type="button" name="button">Join us!</button></a>
+      <a target="_blank" href="https://forms.gle/PXYrEaCYiKVsZ8C5A"><button type="button" name="button">Join us!</button></a>
       <br />
     </div>
 
@@ -66,19 +66,19 @@ export default {
       insights: [
         {
           id: 'members',
-          body: '80+ Members',
+          body: '300+ Members',
           img: require('../../assets/icons/team.png'),
           alt: 'Team character image'
         },
         {
           id: 'events',
-          body: '25+ Events',
+          body: '50+ Events',
           img: require('../../assets/icons/calendar.png'),
           alt: 'Calendar vector image'
         },
         {
           id: 'impact',
-          body: '~5,000+ Impacts',
+          body: '~3,000+ Impacts',
           img: require('../../assets/icons/speackers.png'),
           alt: 'Speackers vector image'
         }
