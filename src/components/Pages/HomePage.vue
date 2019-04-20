@@ -107,7 +107,6 @@ export default {
     position: relative;
   }
   .banners span{
-    border: 3px solid white;
     padding: 5px;
     font-size: 60px;
     font-weight: bold;
@@ -118,6 +117,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 0 3px 5px black;
   }
   .banners span:hover + .banner, .banner:hover{
     opacity: 1;
@@ -178,7 +178,7 @@ export default {
 
   @media screen and (max-width: 992px){
     .banners span{
-      font-size: 25px;
+      font-size: 35px;
       width: 85%;
     }
     .banner{
