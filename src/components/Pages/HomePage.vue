@@ -43,7 +43,7 @@ export default {
     return{
       banners: [
         {
-          name: "Conferences",
+          name: "Construction Conference",
           bg: require('../../assets/events/c18.jpg'),
           route: "/events/conference"
         },
@@ -111,7 +111,7 @@ export default {
     padding: 5px;
     font-size: 60px;
     font-weight: bold;
-    width: 500px;
+    width: 75%;
     color: white;
     position: absolute;
     z-index: 2;
@@ -178,8 +178,8 @@ export default {
 
   @media screen and (max-width: 992px){
     .banners span{
-      font-size: 35px;
-      width: 250px;
+      font-size: 25px;
+      width: 85%;
     }
     .banner{
       height: 300px;
