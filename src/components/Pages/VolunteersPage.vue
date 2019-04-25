@@ -192,12 +192,9 @@ export default {
             name: 'Public Relations and Fund Raising',
             members:[
               'Mahmoud Sherif',
-              'Ghada Salah',
               'Abdallah Magdi',
               'Mohamed Habib',
               'Ahmed ElDafrawi',
-              'Mahmoud Shalabi',
-              'Mohamed Jacob'
             ]
           },
           {
