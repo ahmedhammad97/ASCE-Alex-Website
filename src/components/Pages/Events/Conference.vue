@@ -44,7 +44,7 @@
             <p>There are various topics that we as students or even junior engineers know nothing about. Thus, this theme aims to present interesting topics that we barely hear about.</p>
 
             <center>
-              <h4><b>Sponsors and Parteners</b></h4>
+              <h4><b>Sponsors and Partners</b></h4>
               <br />
               <ul>
                 <li v-for="sponsor in sponsors" class="sponsor" :id="sponsor.id" :key="sponsor.id">
