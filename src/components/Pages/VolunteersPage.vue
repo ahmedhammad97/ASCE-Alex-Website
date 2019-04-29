@@ -72,9 +72,9 @@ export default {
           image: require('../../assets/members/MaiElZoherey.jpg')
         },
         {
-          name: 'Abdallah Saad',
+          name: 'Mahmoud Ashraf',
           role: 'Organization and Logistics Committe Head',
-          image: require('../../assets/members/AbdallahSaad.jpg')
+          image: require('../../assets/members/MahmoudAshraf.jpg')
         },
         {
           name: 'Mostafa Hafez',
@@ -96,11 +96,11 @@ export default {
           role: 'Human Resources Committe Vice Head',
           image: require('../../assets/members/EslamAdel.jpg')
         },
-        {
-          name: 'Mahmoud Ashraf',
-          role: 'Organization and Logistics Committe Vice Head',
-          image: require('../../assets/members/MahmoudAshraf.jpg')
-        },
+        // {
+        //   name: 'Mahmoud Ashraf',
+        //   role: 'Organization and Logistics Committe Vice Head',
+        //   image: require('../../assets/members/MahmoudAshraf.jpg')
+        // },
         {
           name: 'Nour Balbaa',
           role: 'Public Relations and Fund Raising Committe Vice Head',
@@ -204,7 +204,6 @@ export default {
               'Omar Ward',
               'Alyaa Ali',
               'Mostafa Gamaly',
-              'Nada Ahmed',
               'Nada Elsharkawy',
               'Marawan Elabbady',
               'Amr Elhandoum',
