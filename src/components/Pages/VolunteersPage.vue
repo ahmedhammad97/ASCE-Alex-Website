@@ -76,11 +76,11 @@ export default {
           role: 'Organization and Logistics Committe Head',
           image: require('../../assets/members/MahmoudAshraf.jpg')
         },
-        {
-          name: 'Mostafa Hafez',
-          role: 'Public Relations and Fund Raising Committe Head',
-          image: require('../../assets/members/MostafaHafez.jpg')
-        },
+        // {
+        //   name: 'Mostafa Hafez',
+        //   role: 'Public Relations and Fund Raising Committe Head',
+        //   image: require('../../assets/members/MostafaHafez.jpg')
+        // },
         {
           name: 'Rawan Maher',
           role: 'Media Committe Head',
@@ -101,11 +101,11 @@ export default {
         //   role: 'Organization and Logistics Committe Vice Head',
         //   image: require('../../assets/members/MahmoudAshraf.jpg')
         // },
-        {
-          name: 'Nour Balbaa',
-          role: 'Public Relations and Fund Raising Committe Vice Head',
-          image: require('../../assets/members/NourBalbaa.jpg')
-        },
+        // {
+        //   name: 'Nour Balbaa',
+        //   role: 'Public Relations and Fund Raising Committe Vice Head',
+        //   image: require('../../assets/members/NourBalbaa.jpg')
+        // },
         {
           name: 'Amr Shaher',
           role: 'Media Committe Vice Head',
@@ -126,7 +126,6 @@ export default {
               'Ahmed Saeed Mansour',
               'Sara Adel',
               'Mohamed Shalaby',
-              'Heba Abd el rahman',
               'Mahmoud Abd elsabour',
               'Fatma Morsy',
               'Selim Mustafa'
@@ -168,7 +167,6 @@ export default {
               'Omar El Touny',
               'Mohamed Marzouk',
               'Yasmine Bassem',
-              'Yasmine Khalil',
               'Karim Fawzy',
               'Ahmed Samir',
               'Mahmoud Morsy',
@@ -179,7 +177,6 @@ export default {
               'Rafael Vector',
               'Asmaa Mahmoud',
               'Habiba Mohamed',
-              'Donia Muhammed Hassan',
               'Mahmoud Said',
               'Marwa samir abd el hamid',
               'Mohamed Adel',
@@ -193,7 +190,6 @@ export default {
             members:[
               'Mahmoud Sherif',
               'Abdallah Magdi',
-              'Mohamed Habib',
               'Ahmed ElDafrawi',
             ]
           },
