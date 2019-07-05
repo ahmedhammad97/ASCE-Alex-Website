@@ -171,7 +171,6 @@ export default {
               'Ahmed Samir',
               'Mahmoud Morsy',
               'Khaled Elaraby',
-              'Rana Abubasha',
               'Mohamed Hamdy Derbala',
               'Nada Ashraf',
               'Rafael Vector',
