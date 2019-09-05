@@ -24,6 +24,12 @@ export default {
     return{
       slides: [
         {
+          title: 'Bashayer Alkhair Visit',
+          body: 'ASCE Alex SC offered an onsite training opportunity in Bashayer Alkhair site under supervision of professors from Faculty of Engineering Alexandria University, for the students from the 2019 and 2020 batches.</b>',
+          img: require('../../../assets/logoPlaceholder.jpg'),
+          alt: 'Placeholder'
+        },
+        {
           title: 'ALSharqeya Site Visit for steel structures',
           body: 'In order to bridge the gap between academics and site experience, we managed a site visit to Al sharqeya where we can observe how steel structures are constructed as this type ofstructures aren’t common in Egypt.<br /><b>Number of participants: 15</b>',
           img: require('../../../assets/events/steelVisit.jpg'),

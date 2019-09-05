@@ -63,7 +63,7 @@ export default {
   padding: 10px;
 }
 #megaEvent{
-  background-color: #0c5fa8;
+  background-color: #0c5fa8 !important;
 }
 #megaEvent .events{
   color: white;

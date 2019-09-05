@@ -6,6 +6,31 @@
     <b-card no-body class="courseBody" active>
       <b-tabs card>
 
+      <b-tab title="Mechatsruct Academy">
+        <b-card-text>
+          <h2>Partnership with Mechatsruct Academy</h2>
+          <br />
+          <p>We cooperated with ASME Alex SS in developing a specialized academy that offers high quality courses with reasonable prices for engineering students in Civil and Mechanical Engineering.</p>
+          <br />
+          <h4>Offered courses</h4>
+          <ul>
+            <li>BIM Diploma</li>
+            <li>Civil Diploma</li>
+            <li>Technical Office</li>
+            <li>Revit Architecture</li>
+            <li>Site Diploma</li>
+            <li>Primavera</li>
+            <li>ANSYS</li>
+            <li>Heat Exchangers</li>
+            <li>Hydraulics</li>
+            <li>Sealing and Shaft Alignment</li>
+            <li>Six Sigma</li>
+            <li>TurboMachinery</li>
+            <li>SolidWorks</li>
+          </ul>
+        </b-card-text>
+      </b-tab>
+
       <b-tab title="Summer Courses">
         <b-card-text>
           <p>Civil and architectural engineers should stay on track with the day to day advancement in the industry. By attaining and developing their computational skills and advancing it to compete in the booming industry.</p>

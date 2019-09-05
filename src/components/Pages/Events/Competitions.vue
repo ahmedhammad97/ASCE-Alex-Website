@@ -24,6 +24,14 @@ export default {
     return{
       comps: [
         {
+          title: 'BIM Competition 2019',
+          body: 'Building Information Modeling competition targets Architectural, Civil and Construction engineering students.<br />It aims to provide future engineers with the required computational skills.<br />Also, BIM competition aims to bridge the gap between academics and real life applications.<br />Expected number of 30 participants, they will work together in groups to enhance their creativity, communication skills in addition to being capable to plan for an idea efficiently.<br />BIM Competition was held during the period starting from 1/8/2019 till 29/8/2019.<br />BIM Competition is expected to be held at Faculty of Engineering, Alexandria University.</b>',
+          img: require('../../../assets/events/bim19.jpg'),
+          alt: 'Group photo of the winning team',
+          id: 'bim19',
+          show: false
+        },
+        {
           title: 'Egg Protection Device 2017',
           body: 'ASCE Alex Uni SC WON The 1st Place in Egg Protection Device Competition. It was a great victory to see a team of 4 ASCE Alex SC members wining This National competition and making it among 40 teams from all the Egyptian universities held at AAST.<br /><b>Our Team was under Dr. Salah Al-Fitiany’s supervision.</b>',
           img: require('../../../assets/events/epd17.jpg'),
