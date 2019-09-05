@@ -41,19 +41,18 @@
 
             <center>
               <h4><b>Sponsors and Partners</b></h4>
-              <ul class="sponsers19">
-                <li>Amreyah Cement</li>
-                <li>Hommah El Mostakbal</li>
-                <li>Arab Contractors</li>
-                <li>UCCD</li>
-                <li>BIM Arabia</li>
-                <li>IEREK</li>
-                <li>Calibers</li>
-                <li>FLUX co-working space</li>
-                <li>Private co-working space</li>
-              </ul>
               <br />
+              <ul>
+                <li v-for="sponsor in sponsors19" class="sponsor" :id="sponsor.id" :key="sponsor.id">
+                  <img :src="sponsor.url" :alt="sponsor.name + ' logo'" class="sponsorImg">
+                </li>
+              </ul>
             </center>
+
+            <b-tooltip v-for="sponsor in sponsors19" :target="sponsor.id" :key="sponsor.id">
+              <span>{{sponsor.name}}</span>
+            </b-tooltip>
+            <br />
 
 
             <b-img-lazy :src="require('../../../assets/events/c19.jpg')" :blank-src="require('../../../assets/logoPlaceholder.jpg')" offset="800" alt="Construction Conference '19 group photo" class="groupPhoto" />
@@ -79,13 +78,13 @@
               <h4><b>Sponsors and Partners</b></h4>
               <br />
               <ul>
-                <li v-for="sponsor in sponsors" class="sponsor" :id="sponsor.id" :key="sponsor.id">
+                <li v-for="sponsor in sponsors18" class="sponsor" :id="sponsor.id" :key="sponsor.id">
                   <img :src="sponsor.url" :alt="sponsor.name + ' logo'" class="sponsorImg">
                 </li>
               </ul>
             </center>
 
-            <b-tooltip v-for="sponsor in sponsors" :target="sponsor.id" :key="sponsor.id">
+            <b-tooltip v-for="sponsor in sponsors18" :target="sponsor.id" :key="sponsor.id">
               <span>{{sponsor.name}}</span>
             </b-tooltip>
             <br />
@@ -131,41 +130,79 @@ export default {
   name: 'ConferencePage',
   data(){
     return{
-      sponsors: [
+      sponsors19: [
         {
           name: 'Amreya Cement',
           id: 'amreyaCement',
-          url: require('../../../assets/sponsors/amreyaCement.jpg')
+          url: require('../../../assets/sponsors/19/amreyah.jpg')
+        },
+        {
+          name: 'BIM Arabia',
+          id: 'bim',
+          url: require('../../../assets/sponsors/19/bim.jpg')
+        },
+        {
+          name: 'IEREK',
+          id: 'ierek',
+          url: require('../../../assets/sponsors/19/ierek.jpg')
+        },
+        {
+          name: 'UCCD',
+          id: 'uccd',
+          url: require('../../../assets/sponsors/19/uccd.jpg')
+        },
+        {
+          name: 'Hommat Al-Mostakbal',
+          id: 'hommah',
+          url: require('../../../assets/sponsors/19/hommah.jpg')
+        },
+        {
+          name: 'Flux Co-working Space',
+          id: 'flux',
+          url: require('../../../assets/sponsors/19/flux.jpg')
+        },
+        {
+          name: 'Private co-working Space',
+          id: 'private',
+          url: require('../../../assets/sponsors/19/private.jpg')
+        }
+      ],
+
+      sponsors18: [
+        {
+          name: 'Amreya Cement',
+          id: 'amreyaCement',
+          url: require('../../../assets/sponsors/18/amreyaCement.jpg')
         },
         {
           name: 'Mancrew',
           id: 'manCrew',
-          url: require('../../../assets/sponsors/manCrew.jpg')
+          url: require('../../../assets/sponsors/18/manCrew.jpg')
         },
         {
           name: 'Buckets',
           id: 'buckets',
-          url: require('../../../assets/sponsors/buckets.jpg')
+          url: require('../../../assets/sponsors/18/buckets.jpg')
         },
         {
           name: 'Fuman cheese',
           id: 'fumanCheese',
-          url: require('../../../assets/sponsors/fumanCheese.jpg')
+          url: require('../../../assets/sponsors/18/fumanCheese.jpg')
         },
         {
           name: 'Nola Cupcakes',
           id: 'nola',
-          url: require('../../../assets/sponsors/nola.jpg')
+          url: require('../../../assets/sponsors/18/nola.jpg')
         },
         {
           name: 'Burger Factory',
           id: 'burgerFactory',
-          url: require('../../../assets/sponsors/burgerFactory.jpg')
+          url: require('../../../assets/sponsors/18/burgerFactory.jpg')
         },
         {
           name: 'Villa Yacoub',
           id: 'villaYacoub',
-          url: require('../../../assets/sponsors/villaYacoub.jpg')
+          url: require('../../../assets/sponsors/18/villaYacoub.jpg')
         }
       ]
     }
