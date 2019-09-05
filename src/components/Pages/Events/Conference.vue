@@ -28,7 +28,39 @@
       <b-card no-body>
         <b-tabs pills card>
 
-          <b-tab title="Conference '18" active><b-card-text>
+
+          <b-tab title="Conference '19" active><b-card-text>
+            <center>
+              <p>In C’19, our vision was to guide engineers to new productive tracks of research and self development.
+              <br />
+              This was achieved through various sessions held by professional professors and engineers in the Construction field.
+              <br />
+              Construction Conference’ 19 took place in the 24th and 25th of July 2019 in Faculty of Engineering Alexandria University.</p>
+              <br />
+            </center>
+
+            <center>
+              <h4><b>Sponsors and Partners</b></h4>
+              <ul class="sponsers19">
+                <li>Amreyah Cement</li>
+                <li>Hommah El Mostakbal</li>
+                <li>Arab Contractors</li>
+                <li>UCCD</li>
+                <li>BIM Arabia</li>
+                <li>IEREK</li>
+                <li>Calibers</li>
+                <li>FLUX co-working space</li>
+                <li>Private co-working space</li>
+              </ul>
+              <br />
+            </center>
+
+
+            <b-img-lazy :src="require('../../../assets/events/c19.jpg')" :blank-src="require('../../../assets/logoPlaceholder.jpg')" offset="800" alt="Construction Conference '19 group photo" class="groupPhoto" />
+          </b-card-text></b-tab>
+
+
+          <b-tab title="Conference '18"><b-card-text>
             <p><i>The Conference took place in 3 consecutive days, having a variety of academic sessions and case study talks. In order to achieve our objectives, Construction Conference’18 focused on three main themes as follows:</i></p>
             <br />
 
@@ -172,6 +204,17 @@ section{
   border-radius: 10px;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.sponsers19 li{
+  list-style-type: none;
+  font-weight: bold;
+  display: inline-grid;
+  margin: 15px;
+  padding: 10px;
+  background-color: #0c5fa8;
+  border-radius: 15px;
+  color: white;
 }
 
 @media screen and (max-width: 992px){
