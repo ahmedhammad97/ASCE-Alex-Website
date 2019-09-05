@@ -24,6 +24,14 @@ export default {
     return{
       comps: [
         {
+          title: 'FRC Bowling Competition',
+          body: 'ASCE AlexSC Technical team ranked the second position in the FRC Bowling national competition held by ACI AAST.</b>',
+          img: require('../../../assets/events/frc.jpg'),
+          alt: 'Group photo of the winning team',
+          id: 'frc',
+          show: false
+        },
+        {
           title: 'BIM Competition 2019',
           body: 'Building Information Modeling competition targets Architectural, Civil and Construction engineering students.<br />It aims to provide future engineers with the required computational skills.<br />Also, BIM competition aims to bridge the gap between academics and real life applications.<br />Expected number of 30 participants, they will work together in groups to enhance their creativity, communication skills in addition to being capable to plan for an idea efficiently.<br />BIM Competition was held during the period starting from 1/8/2019 till 29/8/2019.<br />BIM Competition is expected to be held at Faculty of Engineering, Alexandria University.</b>',
           img: require('../../../assets/events/bim19.jpg'),
@@ -55,11 +63,11 @@ export default {
 
 <style scoped>
 .competitions{
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 .card{
-  margin: 150px;
+  margin: 100px;
 }
 p{
   text-align: left;
