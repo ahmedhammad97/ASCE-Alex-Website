@@ -10,7 +10,19 @@
     </b-card-group>
 
     <b-modal v-for="comp in comps" :key="comp.title" :title="comp.title" :id="comp.id" v-model="comp.show">
-      <p v-html="comp.body"></p>
+      <div class="">
+              <p v-html="comp.body"></p>
+              <div v-for="model in models" :key="model.name">
+                <center>
+                  <h2>{{model.name}}</h2>
+                  <br />
+                  <img :src="model.archSrc" class="modelimg">
+                  <img :src="model.strSrc" class="modelimg">
+                </center>
+                <br />
+                <br />
+              </div>
+      </div>
       <b-button size="sm" class="float-right" variant="primary" @click="comp.show=false" slot="modal-footer">Close</b-button>
     </b-modal>
 
@@ -55,6 +67,28 @@ export default {
         //   id: 'egg16',
         //   show: false
         // },
+      ],
+      models : [
+        {
+          name : 'Team 1',
+          archSrc: require('../../../assets/models/Team1Arch.jpg'),
+          strSrc: require('../../../assets/models/Team1STR.jpg')
+        },
+        {
+          name : 'Team 4',
+          archSrc: require('../../../assets/models/Team4Arch.jpg'),
+          strSrc: require('../../../assets/models/Team4STR.jpg')
+        },
+        {
+          name : 'Team 5',
+          archSrc: require('../../../assets/models/Team5Arch.jpg'),
+          strSrc: require('../../../assets/models/Team5STR.jpg')
+        },
+        {
+          name : 'Team 6',
+          archSrc: require('../../../assets/models/Team6Arch.png'),
+          strSrc: require('../../../assets/models/Team6STR.jpg')
+        },
       ]
     }
   }
@@ -71,6 +105,9 @@ export default {
 }
 p{
   text-align: left;
+}
+.modelimg{
+  width: 200px;
 }
 
 @media screen and (max-width: 992px){
