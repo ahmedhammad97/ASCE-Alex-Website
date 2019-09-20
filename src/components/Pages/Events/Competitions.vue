@@ -10,18 +10,20 @@
     </b-card-group>
 
     <b-modal v-for="comp in comps" :key="comp.title" :title="comp.title" :id="comp.id" v-model="comp.show">
-      <div class="">
-              <p v-html="comp.body"></p>
-              <div v-for="model in models" :key="model.name">
-                <center>
-                  <h2>{{model.name}}</h2>
-                  <br />
-                  <img :src="model.archSrc" class="modelimg">
-                  <img :src="model.strSrc" class="modelimg">
-                </center>
-                <br />
-                <br />
-              </div>
+      <div>
+        <p v-html="comp.body"></p>
+        <div v-if="comp.title === 'BIM Competition 2019'">
+          <div v-for="model in models" :key="model.name">
+            <center>
+              <h2>{{model.name}}</h2>
+              <br />
+              <img :src="model.archSrc" class="modelimg">
+              <img :src="model.strSrc" class="modelimg">
+            </center>
+            <br />
+            <br />
+          </div>
+        </div>
       </div>
       <b-button size="sm" class="float-right" variant="primary" @click="comp.show=false" slot="modal-footer">Close</b-button>
     </b-modal>
