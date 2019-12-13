@@ -44,10 +44,10 @@
 
       <div class="divider"></div><br />
 
-      <div class="committe" v-for="committe in committies" :key="committe.name">
-        <h2>{{committe.name}} Committe Members</h2>
+      <div class="Committee" v-for="Committee in committies" :key="Committee.name">
+        <h2>{{Committee.name}} Committee Members</h2>
         <ul class="members">
-          <li v-for="member in committe.members" v-bind:key="member"><span>{{member}}</span></li>
+          <li v-for="member in Committee.members" v-bind:key="member"><span>{{member}}</span></li>
         </ul>
       </div>
     </div>
@@ -63,52 +63,52 @@ export default {
       boardMembers: [
         {
           name: 'Fatma Morsi',
-          role: 'Academic Committe Head',
+          role: 'Academic Committee Head',
           image: require('../../assets/members/Fatma.jpg')
         },
         {
           name: 'Eslam Adel',
-          role: 'Human Resources Committe Head',
+          role: 'Human Resources Committee Head',
           image: require('../../assets/members/Eslam.jpg')
         },
         {
           name: 'Aya Mamdouh',
-          role: 'Organization and Logistics Committe Head',
+          role: 'Organization and Logistics Committee Head',
           image: require('../../assets/members/Aya.jpg')
         },
         {
           name: 'Shrouk Mohamed',
-          role: 'Technical Committe Head',
+          role: 'Technical Committee Head',
           image: require('../../assets/members/Shrouk.jpg')
         },
         {
           name: 'Amr El-Handoum',
-          role: 'Media and Marketing Committe Head',
+          role: 'Media and Marketing Committee Head',
           image: require('../../assets/members/Amr.jpg')
         },
         {
           name: 'Mohamed Farrag',
-          role: 'Academic Committe Vice Head',
+          role: 'Academic Committee Vice Head',
           image: require('../../assets/members/Farrag.jpg')
         },
         {
           name: 'Mohamed Amer',
-          role: 'Human Resources Committe Vice Head',
+          role: 'Human Resources Committee Vice Head',
           image: require('../../assets/members/Amer.jpg')
         },
         {
           name: 'Marwa Samir',
-          role: 'Organization and Logistics Committe Vice Head',
+          role: 'Organization and Logistics Committee Vice Head',
           image: require('../../assets/members/Marwa.jpg')
         },
         // {
         //   name: 'Nour Balbaa',
-        //   role: 'Public Relations and Fund Raising Committe Vice Head',
+        //   role: 'Public Relations and Fund Raising Committee Vice Head',
         //   image: require('../../assets/members/NourBalbaa.jpg')
         // },
         {
           name: 'Nada El-Sharkawy',
-          role: 'Media and Marketing Committe Vice Head',
+          role: 'Media and Marketing Committeee Vice Head',
           image: require('../../assets/members/Nada.jpg')
         },
         {
