@@ -67,29 +67,14 @@ export default {
           image: require('../../assets/members/Fatma.jpg')
         },
         {
-          name: 'Eslam Adel',
-          role: 'Human Resources Committee Head',
-          image: require('../../assets/members/Eslam.jpg')
-        },
-        {
-          name: 'Aya Mamdouh',
-          role: 'Organization and Logistics Committee Head',
-          image: require('../../assets/members/Aya.jpg')
-        },
-        {
-          name: 'Shrouk Mohamed',
-          role: 'Technical Committee Head',
-          image: require('../../assets/members/Shrouk.jpg')
-        },
-        {
-          name: 'Amr El-Handoum',
-          role: 'Media and Marketing Committee Head',
-          image: require('../../assets/members/Amr.jpg')
-        },
-        {
           name: 'Mohamed Farrag',
           role: 'Academic Committee Vice Head',
           image: require('../../assets/members/Farrag.jpg')
+        },
+        {
+          name: 'Eslam Adel',
+          role: 'Human Resources Committee Head',
+          image: require('../../assets/members/Eslam.jpg')
         },
         {
           name: 'Mohamed Amer',
@@ -97,9 +82,24 @@ export default {
           image: require('../../assets/members/Amer.jpg')
         },
         {
+          name: 'Aya Mamdouh',
+          role: 'Organization and Logistics Committee Head',
+          image: require('../../assets/members/Aya.jpg')
+        },
+        {
           name: 'Marwa Samir',
           role: 'Organization and Logistics Committee Vice Head',
           image: require('../../assets/members/Marwa.jpg')
+        },
+        {
+          name: 'Amr El-Handoum',
+          role: 'Media and Marketing Committee Head',
+          image: require('../../assets/members/Amr.jpg')
+        },
+        {
+          name: 'Nada El-Sharkawy',
+          role: 'Media and Marketing Committeee Vice Head',
+          image: require('../../assets/members/Nada.jpg')
         },
         // {
         //   name: 'Nour Balbaa',
@@ -107,9 +107,9 @@ export default {
         //   image: require('../../assets/members/NourBalbaa.jpg')
         // },
         {
-          name: 'Nada El-Sharkawy',
-          role: 'Media and Marketing Committeee Vice Head',
-          image: require('../../assets/members/Nada.jpg')
+          name: 'Shrouk Mohamed',
+          role: 'Technical Committee Head',
+          image: require('../../assets/members/Shrouk.jpg')
         },
         {
           name: 'Ahmed Hammad',
