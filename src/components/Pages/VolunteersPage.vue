@@ -8,8 +8,8 @@
       <div class="president">
         <b-row>
           <b-col sm="12" class="avatar">
-            <b-img-lazy :src="require('../../assets/members/Nour.jpg')" :blank-src="require('../../assets/placeholder.png')" alt="President"/>
-            <p class="name">Nour El Heweity</p>
+            <b-img-lazy :src="require('../../assets/members/Khaiat.jpg')" :blank-src="require('../../assets/placeholder.png')" alt="President"/>
+            <p class="name">Mohamed El-Khaiat</p>
             <p class="role">President</p>
           </b-col>
         </b-row>
@@ -18,14 +18,14 @@
       <div class="viceAndTreasurer">
         <b-row>
           <b-col sm="12" md="6" class="avatar">
-            <b-img-lazy :src="require('../../assets/members/IbrahimAshraf.jpg')" :blank-src="require('../../assets/placeholder.png')" alt="Vice President"/>
-            <p class="name">Ibrahim Ashraf</p>
+            <b-img-lazy :src="require('../../assets/members/MennaAllah.jpg')" :blank-src="require('../../assets/placeholder.png')" alt="Vice President"/>
+            <p class="name">MennaAllah Mohamed</p>
             <p class="role">Vice President</p>
           </b-col>
 
           <b-col sm="12" md="6" class="avatar">
-            <b-img-lazy :src="require('../../assets/members/MohamedSamak.jpg')" :blank-src="require('../../assets/placeholder.png')" alt="Treasurer"/>
-            <p class="name">Mohamed Samak</p>
+            <b-img-lazy :src="require('../../assets/members/Shaimaa.jpg')" :blank-src="require('../../assets/placeholder.png')" alt="Treasurer"/>
+            <p class="name">Shaimaa Abdullah </p>
             <p class="role">Treasurer</p>
           </b-col>
         </b-row>
@@ -62,54 +62,54 @@ export default {
     return {
       boardMembers: [
         {
-          name: 'Mohamed Farrag',
+          name: 'Fatma Morsi',
           role: 'Academic Committe Head',
-          image: require('../../assets/members/MohamedFarrag.jpg')
-        },
-        {
-          name: 'Mai El Zoherey',
-          role: 'Human Resources Committe Head',
-          image: require('../../assets/members/MaiElZoherey.jpg')
-        },
-        {
-          name: 'Mahmoud Ashraf',
-          role: 'Organization and Logistics Committe Head',
-          image: require('../../assets/members/MahmoudAshraf.jpg')
-        },
-        // {
-        //   name: 'Mostafa Hafez',
-        //   role: 'Public Relations and Fund Raising Committe Head',
-        //   image: require('../../assets/members/MostafaHafez.jpg')
-        // },
-        {
-          name: 'Rawan Maher',
-          role: 'Media Committe Head',
-          image: require('../../assets/members/RawanMaher.jpg')
-        },
-        {
-          name: 'Mohamed El Khaiat',
-          role: 'Academic Committe Vice Head',
-          image: require('../../assets/members/MohamedElKhaiat.jpg')
+          image: require('../../assets/members/Fatma.jpg')
         },
         {
           name: 'Eslam Adel',
-          role: 'Human Resources Committe Vice Head',
-          image: require('../../assets/members/EslamAdel.jpg')
+          role: 'Human Resources Committe Head',
+          image: require('../../assets/members/Eslam.jpg')
         },
-        // {
-        //   name: 'Mahmoud Ashraf',
-        //   role: 'Organization and Logistics Committe Vice Head',
-        //   image: require('../../assets/members/MahmoudAshraf.jpg')
-        // },
+        {
+          name: 'Aya Mamdouh',
+          role: 'Organization and Logistics Committe Head',
+          image: require('../../assets/members/Aya.jpg')
+        },
+        {
+          name: 'Shrouk Mohamed',
+          role: 'Technical Committe Head',
+          image: require('../../assets/members/Shrouk.jpg')
+        },
+        {
+          name: 'Amr El-Handoum',
+          role: 'Media and Marketing Committe Head',
+          image: require('../../assets/members/Amr.jpg')
+        },
+        {
+          name: 'Mohamed Farrag',
+          role: 'Academic Committe Vice Head',
+          image: require('../../assets/members/Farrag.jpg')
+        },
+        {
+          name: 'Mohamed Amer',
+          role: 'Human Resources Committe Vice Head',
+          image: require('../../assets/members/Amer.jpg')
+        },
+        {
+          name: 'Marwa Samir',
+          role: 'Organization and Logistics Committe Vice Head',
+          image: require('../../assets/members/Marwa.jpg')
+        },
         // {
         //   name: 'Nour Balbaa',
         //   role: 'Public Relations and Fund Raising Committe Vice Head',
         //   image: require('../../assets/members/NourBalbaa.jpg')
         // },
         {
-          name: 'Amr Shaher',
-          role: 'Media Committe Vice Head',
-          image: require('../../assets/members/AmrShaher.jpg')
+          name: 'Nada El-Sharkawy',
+          role: 'Media and Marketing Committe Vice Head',
+          image: require('../../assets/members/Nada.jpg')
         },
         {
           name: 'Ahmed Hammad',
