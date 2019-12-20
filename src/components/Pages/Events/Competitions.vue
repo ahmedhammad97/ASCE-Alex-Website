@@ -11,9 +11,11 @@
 
     <b-modal v-for="comp in comps" :key="comp.title" :title="comp.title" :id="comp.id" v-model="comp.show">
       <div>
-        <p v-html="comp.body"></p>
-        <div v-if="comp.title === 'BIM Competition 2019'">
+        <p v-if="comp.id !== 'bim19' && comp.id !== 'egg19'" v-html="comp.body"></p>
+
+        <div v-if="comp.id === 'bim19'">
           <div v-for="model in models" :key="model.name">
+            <p v-html="comp.body"></p>
             <center>
               <h2>{{model.name}}</h2>
               <br />
@@ -24,6 +26,21 @@
             <br />
           </div>
         </div>
+
+        <div v-if="comp.id === 'egg19'">
+          <img :src="comp.groupImg" class="compImg"><br /><br>
+          <p>It was a great honor for us as ASCE ALEX SC to participate in EPD (Egg Protection Device) competition under supervision of ACI-AAST.</p>
+          <br />
+          <iframe src="https://www.youtube.com/embed/DUZdUNEwv-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br /><br />
+          <p>We are glad to announce that we have achieved the 4th place among 39 teams who also participated in EPD Competition .</p>
+          <br />
+          <img :src="comp.img" class="compImg">
+          <br />
+          <p>Finally, we are so proud of our technical team who  exterted their utmost effort to be part of this competiton. For a whole month, our technical team were working on the design of concrete and steel reinforment till they succeeded and reached the 4th place in the comptetion and that was not easy especially among 39 teams.<br />Our technical team: Shrouk Mohamed, Shaimaa Abdullah El Abd,Mohamed Farrag, Moamen Shaltoot, Omar El Sherif</p>
+
+        </div>
+
       </div>
       <b-button size="sm" class="float-right" variant="primary" @click="comp.show=false" slot="modal-footer">Close</b-button>
     </b-modal>
@@ -37,6 +54,15 @@ export default {
   data(){
     return{
       comps: [
+        {
+          title: 'Egg Protection Device 2019',
+          body: 'In cooperation with ACI AAST Student Chapter, we were honored to hold this competition which objectives were to design and build the highest-impact-load-resistant plain or reinforced concrete Egg Protection Device (EPD), learn about concrete’s sustainable benefits related to durability, impact resistance, and other real-life aspects which an EPD simulates.<br />The EPD Competition was used to evaluate a potential structure for long term protection of a high-value military asset. The structure must be designed to protect the asset (egg) from repeated aerial bombardment as well as potential chemical attack.<br />Reinforcing placement and design plays a large role in the survivability of the structure as well as overall density of the concrete mixture itself. Physical strength was tested by dropping a weight onto the structure. The teams that successfully created a durable structure were rewarded.',
+          img: require('../../../assets/events/EPD19-1.jpg'),
+          alt: 'Group photo of the team',
+          id: 'egg19',
+          show: false,
+          groupImg : require('../../../assets/events/EPD19-2.jpg')
+        },
         {
           title: 'FRC Bowling Competition',
           body: 'ASCE AlexSC Technical team ranked the second position in the FRC Bowling national competition held by ACI AAST.</b>',
@@ -61,14 +87,6 @@ export default {
           id: 'egg17',
           show: false
         },
-        // {
-        //   title: 'Egg Protection Device 2016',
-        //   body: 'In cooperation with ACI AAST Student Chapter, we were honored to hold this competition which objectives were to design and build the highest-impact-load-resistant plain or reinforced concrete Egg Protection Device (EPD), learn about concrete’s sustainable benefits related to durability, impact resistance, and other real-life aspects which an EPD simulates.<br />The EPD Competition was used to evaluate a potential structure for long term protection of a high-value military asset. The structure must be designed to protect the asset (egg) from repeated aerial bombardment as well as potential chemical attack.<br />Reinforcing placement and design plays a large role in the survivability of the structure as well as overall density of the concrete mixture itself. Physical strength was tested by dropping a weight onto the structure. The teams that successfully created a durable structure were rewarded.',
-        //   img: require('../../../assets/events/epd16.jpg'),
-        //   alt: 'Group photo with Dean of Faculty of Engineering, Alexandria University',
-        //   id: 'egg16',
-        //   show: false
-        // },
       ],
       models : [
         {
@@ -103,13 +121,16 @@ export default {
   margin: auto;
 }
 .card{
-  margin: 100px;
+  margin: 25px;
 }
 p{
   text-align: left;
 }
 .modelimg{
   width: 200px;
+}
+.compImg {
+  width: 70%;
 }
 
 @media screen and (max-width: 992px){
