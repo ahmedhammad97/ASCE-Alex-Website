@@ -21,7 +21,7 @@
     </div>
 
     <div class="copyrights">
-      Copyrights Reserved 2019 © <a target="_blank" href="http://www.ahmedhammad.me">Ahmed Hammad</a>
+      Copyrights Reserved 2020 © <a target="_blank" href="http://www.ahmedhammad97.com">Ahmed Hammad</a>
     </div>
   </div>
 </template>
